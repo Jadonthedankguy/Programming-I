@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Epic Snowman moments</title>
+</head>
+
+
+<body>
+	<canvas id="myCanvas" width="1000" height="1000"></canvas>
+	<script>
+		var canvas =  document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		var centerX = canvas.width / 2;
+		var centerY = canvas.height / 2;
+		var BOTTOM_RADIUS = 80;
+		var MID_RADIUS = 60;
+		var TOP_RADIUS = 50;
+		
+		context.beginPath();
+		context.arc(100, 300, BOTTOM_RADIUS, 0, 2 * Math.PI, false);
+		context.fillStyle = 'gray';
+		context.fill();
+		context.closePath();
+		context.beginPath();
+		context.arc(100, 200, MID_RADIUS, 0, 2 * Math.PI, false);
+		context.fillStyle = 'gray';
+		context.fill();
+		context.closePath();
+		context.beginPath();
+		context.arc(100, 100, TOP_RADIUS, 0, 2 * Math.PI, false);
+		context.fillStyle = 'gray';
+		context.fill();
+		
+	</script>
+</body>
+</html>

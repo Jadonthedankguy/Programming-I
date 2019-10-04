@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	
+</head>
+
+<body>
+<canvas id="myCanvas" width="578" height="200"></canvas>
+<script>
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+
+context.beginPath();
+context.rect(100,50,200,50);
+context.fillStyle = 'blue';
+context.fill();
+context.lineWidth = 7;
+context.strokeStyle = 'blue';
+context.stroke();
+context.closePath();
+
+context.beginPath();
+context.rect(100,150,200,50);
+context.fillStyle = 'red';
+context.fill();
+context.lineWidth = 7;
+context.strokeStyle = 'red';
+context.stroke();
+context.closePath();
+
+
+</script>
+</body>
+</html>
